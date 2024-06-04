@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
+            background-image: linear-gradient(to top, #97f095 0%, #d4c8fb 100%);
+        }
+
+        .shell {
+            width: 780px;
+            padding: 0 0 30px 0;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .head {
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .head::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("./img/4.png");
+            background-size: 200%;
+            background-position: 50% 10%;
+            z-index: -1;
+            transform: skewY(-4deg);
+            transform-origin: 0 0;
+        }
+
+        .cover {
+            position: absolute;
+            top: 190px;
+            left: 25px;
+            width: 220px;
+            height: 220px;
+            z-index: 2;
+            border-radius: 500px;
+            /* border: 10px #fff solid;
+            box-shadow: 0 5px 10px #00000065; */
+            background-image: url(./img/3.jpg);
+            background-position: 68% 28%;
+            background-size: 200%;
+            background-repeat: no-repeat;
+
+            border: 10px #f0e097 solid;
+            /* 修改边框颜色为与背景相协调的鲜艳颜色 */
+            box-shadow: 0 5px 10px #f0970065;
+            animation: moveRotate 5s linear infinite;
+        }
+
+
+        .data {
+            padding: 190px 0 0 280px;
+            text-shadow: 0 0 20px #000;
+        }
+
+        .data .title1 {
+            /* color: white; */
+            color: #f09700;
+            font-size: 50px;
+            font: 900 50px '';
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .data .title1 span {
+            position: absolute;
+            top: 17px;
+            margin-left: 12px;
+            background: #ffe44c;
+            border-radius: 5px;
+            color: #000000;
+            font-size: 14px;
+            padding: 0px 4px;
+        }
+
+        .data .title2 {
+            color: #fff;
+            font: 500 24px '';
+        }
+
+        .foot {
+            line-height: 26px;
+            color: #444;
+        }
+
+        .tags {
+            padding-left: 30px;
+            padding-top: 100px;
+            width: 250px;
+            float: left;
+            text-align: center;
+        }
+
+        .tag {
+            /* background: rgb(149, 178, 255); */
+            background: #f0e097;
+            color: #fff;
+            border-radius: 10px;
+            padding: 3px 8px;
+            font-size: 14px;
+            margin-right: 4px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background: #eee4ad;
+            color: #444;
+        }
+
+        .introduce {
+            padding: 25px 0 0 35px;
+            width: 480px;
+            float: left;
+        }
+
+        @keyframes moveRotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="shell">
+        <div class="cover"></div>
+        <div class="head">
+            <div class="data">
+                <div class="title1">超纤<span>学生</span></div>
+                <div class="title2">跑步爱好者</div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="tags">
+                <span class="tag">说你是不是你是我兄弟</span>
+                <span class="tag">奶奶</span>
+                <span class="tag">爱在游泳池喝洗澡水</span>
+                <span class="tag">皮兵</span>
+                <span class="tag">郊区兵</span>
+                <span class="tag">狗是我兄弟</span>
+            </div>
+            <div class="introduce">
+                <p>
+                    大家好，我是来自2000年的小“龙”人，别看我这脑袋长得像个三角形，我可是咱们这跑步界的“火箭发射器”！
+                    小时候，妈妈总是担心我这三角形的脑袋会让我成为数学天才，但没想到，我却在跑道上找到了自己的舞台。每次我跑步，都感觉自己像是一条穿越云端的龙，风驰电掣，无人能敌。尤其是那10km的赛道，简直就是我展示自我、放飞自我的绝佳舞台。每次跑完，我都感觉自己像是刚从龙宫里出来，神清气爽，连呼吸都带着仙气。
+                    不过话说回来，我这20年的跑步生涯也不是一帆风顺的。记得刚开始的时候，我跑步姿势怪异，经常被人误认为是外星来客。但我没有放弃，我坚信自己就是跑步界的那颗璀璨的星星。于是，我勤学苦练，终于练就了一身好本领。现在，我已经成为了跑步界的“退役老兵”，但我心中的火焰从未熄灭。
+                    虽然我已经退役了，但我的精神和热情依然在燃烧。我希望通过我的经历，能够激励更多的人加入到跑步这个大家庭中来，感受那种挑战自我、超越极限的快感。毕竟，跑步不仅是一种运动，更是一种生活态度，一种对自我的挑战和超越
+                    最后，我想说，虽然我的头型像三角形，但我跑得可是比火箭还快哦！谢谢大家！
+                </p>
+            </div>
+        </div>
+        </img>
+
+</body>
+
+</html>

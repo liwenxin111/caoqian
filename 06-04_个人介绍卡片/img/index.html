@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+        }
+
+        .shell {
+            width: 780px;
+            height: 580px;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .head {
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .head::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("./img/1.png");
+            background-size: cover;
+            z-index: -1;
+            transform: skewY(-4deg);
+            transform-origin: 0 0;
+        }
+
+        .cover {
+            position: absolute;
+            top: 190px;
+            left: 25px;
+            width: 220px;
+            z-index: 2;
+            border-radius: 500px;
+            border: 10px #fff solid;
+            box-shadow: 0 5px 10px #00000065;
+        }
+
+        .data {
+            padding: 190px 0 0 280px;
+            text-shadow: 0 0 20px #000;
+        }
+
+        .data .title1 {
+            color: white;
+            font-size: 50px;
+            font: 900 50px '';
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .data .title1 span {
+            position: absolute;
+            top: 17px;
+            margin-left: 12px;
+            background: #ffe44c;
+            border-radius: 5px;
+            color: #000000;
+            font-size: 14px;
+            padding: 0px 4px;
+        }
+
+        .data .title2 {
+            color: #fff;
+            font: 500 24px '';
+        }
+
+        .foot {
+            line-height: 26px;
+            color: #444;
+        }
+
+        .tags {
+            padding-left: 30px;
+            padding-top: 100px;
+            width: 250px;
+            float: left;
+            text-align: center;
+        }
+
+        .tag {
+            background: rgb(149, 178, 255);
+            color: #fff;
+            border-radius: 10px;
+            padding: 3px 8px;
+            font-size: 14px;
+            margin-right: 4px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+
+        .tag:hover {
+            background: #eee4ad;
+            color: #444;
+        }
+
+        .introduce {
+            padding: 25px 0 0 35px;
+            width: 480px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="shell">
+        <img src="./img/2.png" alt="" class="cover">
+        <div class="head">
+            <div class="data">
+                <div class="title1">超纤<span>学生</span></div>
+                <div class="title2">跑步爱好者</div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="tags">
+                <span class="tag">说你是不是你是我兄弟</span>
+                <span class="tag">奶奶</span>
+                <span class="tag">爱在游泳池喝洗澡水</span>
+                <span class="tag">皮兵</span>
+                <span class="tag">郊区兵</span>
+                <span class="tag">狗是我兄弟</span>
+            </div>
+            <div class="introduce">
+                <p>
+                    各位朋友们，大家好！
+
+                    我，一个标准的00后，属龙，自诩为“龙形跑者”。别看我头型像个三角形，这可不是为了增加我的空气动力学性能，而是在告诉大家：我有着独特的思考角度和个性！
+                    说到跑步，我可是个高手！特别是那10km的赛道，对我而言简直就像是一场说走就走的旅行。我跑得飞快，别人都说我是“风驰电掣”的龙形闪电侠。不过，这速度可不是一蹴而就的，我每天都得跟我的“三角形”脑袋较劲，思考如何更高效地利用我的能量。
+
+                    然后，我得提提我的军旅生涯。想当年，我18岁就怀揣着满腔热血，毅然决然地加入了军营。在那几年里，我不仅学会了如何快速适应环境，还磨练出了不屈不挠的意志。当然，我也学到了很多实用的技能，比如如何快速打包行李、如何在没有Wi-Fi的情况下度过漫长的夜晚……
+
+                    现在，我已经从军营退役，但我的心依然保持着那份军人的坚韧和毅力。我想告诉大家，虽然我已经不再是军人，但我依然会把那份精神带到工作和生活中去。
+
+                    最后，我想说，虽然我的头型像三角形，但我可不会因此而限制自己的发展。我坚信，只要我勇往直前，不断努力，就一定能创造出属于自己的辉煌！谢谢大家！
+                </p>
+            </div>
+            <audio src="./aud/music.mp3"></audio>
+        </div>
+    </div>
+
+</body>
+
+</html>
